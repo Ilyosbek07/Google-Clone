@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . image menu sing-in-btn";
+}
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    text-align: center;
+}
+#story{
+    grid-area: story;
+    justify-self: center;
+    text-align: center;
+}
+#gmail{
+    grid-area: image;
+    justify-self: center;
+    text-align: center;
+}
+#image{
+    grid-area: image;
+}
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    text-align: center;
+}
+#sing-in{
+    grid-area: sing-in;
+    justify-self: center;
+    text-align: center;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas: 
+    ". logo ." 
+    ". search ." 
+    ". google-search-btn random-search-btn ."
+    ". google-text .";
+}
+#logo{
+    grid-area: logo;
+}
+#search{
+    grid-area: search;
+
+}
+#google-search-btn{
+    grid-area: google-search-btn;
+}
+#random-search-btn{
+    grid-area: random-search-btn;
+}
+#google-text{
+    grid-area: google-text;
+}
